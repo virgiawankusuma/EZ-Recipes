@@ -1,2 +1,2 @@
-# Cooking-Diaries
+# EZ-Recipes
 Learn quickly, cook easily

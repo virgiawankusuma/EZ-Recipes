@@ -19,6 +19,12 @@ module.exports = {
                         loader: 'css-loader'
                     }
                 ]
+            },
+            {
+                test: /\.js$/,
+                options: {
+                    presets: ['@babel/preset-env']
+                }
             }
         ]
     }

@@ -1,2 +1,2 @@
 # EZ-Recipes
-Learn quickly, cook easily
+Learn easily, cook quickly

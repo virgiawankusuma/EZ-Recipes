@@ -1,7 +1,7 @@
 {
-  "name": "ez-recipes",
+  "name": "food-dictionary",
   "version": "1.0.0",
-  "description": "Learn easily, cook quickly",
+  "description": "Other Ways of Knowing Food",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/virgiawankusuma/EZ-Recipes.git"
+    "url": "git+https://github.com/virgiawankusuma/food-dictionary.git"
   },
   "author": "Virgiawan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/virgiawankusuma/EZ-Recipes/issues"
+    "url": "https://github.com/virgiawankusuma/food-dictionary/issues"
   },
-  "homepage": "https://github.com/virgiawankusuma/EZ-Recipes#readme",
+  "homepage": "https://github.com/virgiawankusuma/food-dictionary#readme",
   "dependencies": {
     "ajax": "^0.0.4",
     "bootstrap": "^5.1.3",

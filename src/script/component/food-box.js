@@ -18,7 +18,19 @@ class FoodBox extends HTMLElement {
 
     renderError(message) {
         this.innerHTML = "";
-        this.innerHTML += `<h2 class="placeholder">${message}</h2>`;
+        this.innerHTML += `
+        <div class="col">
+            <div class="card my-3 shadow border-0">
+                <div class="row g-0">
+                    <div class="col">
+                        <div class="card-body text-center py-5">
+                            <h3 class="text-danger">${message}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
     }
 }
 

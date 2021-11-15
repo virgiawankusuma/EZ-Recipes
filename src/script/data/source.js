@@ -9,7 +9,22 @@ class Source {
                 if (foods) {
                     return Promise.resolve(foods);
                 } else {
-                    return Promise.reject(`The ${keyword} is not found`);
+                    return Promise.reject(`The food with name "${keyword}" could not be found. Please check your keyword!`);
+                }
+            })
+    }
+
+    static detailFood(id) {
+        return fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                const foodDetail = data.meals
+                if (foodDetail) {
+                    return Promise.resolve(foodDetail);
+                } else {
+                    return Promise.reject(`The food with ID "${id}" could not be found. Please check your ID!`);
                 }
             })
     }

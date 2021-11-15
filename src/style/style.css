@@ -8,9 +8,34 @@ search-box {
     display: block;
 }
 
-.food-card {
+food-card {
     margin-bottom: 1rem;
 }
+
+food-card a {
+    color: #14213d;
+    text-decoration: none;
+}
+
+food-card a:hover,
+food-card a:active {
+    color: #ffc107;
+}
+
+.modal-body img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {}
 
 /* .food-card div {
     cursor: default;

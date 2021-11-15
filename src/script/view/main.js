@@ -16,6 +16,7 @@ window.addEventListener("scroll", () => {
 const main = () => {
     const searchBox = document.querySelector('search-box');
     const foodBox = document.querySelector('food-box');
+    const foodCard = document.querySelector('food-card');
 
     const searchButtonClick = async () => {
         try {
@@ -34,7 +35,7 @@ const main = () => {
         foodBox.renderError(message);
     };
 
-    searchBox.clickEvent = searchButtonClick;
+    searchBox.clicked = searchButtonClick;
 };
 
 export default main;

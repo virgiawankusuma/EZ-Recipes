@@ -1,0 +1,33 @@
+.jumbotron {
+    background-color: #E5E5E5;
+}
+
+article {
+    margin-bottom: 3rem;
+}
+
+.categories-card {
+    margin-bottom: 1rem;
+}
+
+.national-dishes-card {
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    background-color: #14213d;
+    padding: 7vh 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fca311;
+}
+
+footer a:hover,
+footer a:active {
+    text-decoration: none;
+    color: #ffc107;
+}

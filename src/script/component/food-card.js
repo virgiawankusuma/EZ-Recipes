@@ -15,7 +15,7 @@ class FoodCard extends HTMLElement {
                 <div class="col-md-8">
                     <div class="card-body">
                         <a type="button" data-bs-toggle="modal" data-bs-target="#Modal${this._food.idMeal}" class="card-title h4 card-link" id="btn${this._food.idMeal}">${this._food.strMeal}</a>
-                        <h5 class="card-text fw-normal">
+                        <h5 class="card-text fw-light">
                         <span class="badge bg-warning">
                         ${this._food.strArea} Food
                         </span>

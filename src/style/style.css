@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
 .jumbotron {
     background-color: #E5E5E5;
 }
@@ -27,19 +33,6 @@ food-card a:active {
     max-height: 250px;
     object-fit: cover;
 }
-
-.modal.fade .modal-dialog {
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    -moz-transition: -moz-transform 0.3s ease-out;
-    -o-transition: -o-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-}
-
-.modal.in .modal-dialog {}
-
-/* .food-card div {
-    cursor: default;
-} */
 
 footer {
     text-align: center;

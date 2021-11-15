@@ -1,2 +1,2 @@
-# Food Dictionary
-Other Ways of Knowing Food
+# EZ Recipes
+Learn easily, Cook quickly

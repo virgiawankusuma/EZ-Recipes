@@ -1,19 +1,8 @@
-import '../component/food-box.js';
-import '../component/search-box.js';
-import Source from '../data/source.js';
+import './component/food-box.js';
+import './component/search-box.js';
+import Source from './source.js';
 
-const navbar = document.querySelector('.navbar');
-
-window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-    if (scrollY < 20) {
-        navbar.classList.remove('shadow-sm');
-    } else {
-        navbar.classList.add('shadow-sm');
-    }
-});
-
-const main = () => {
+const view = () => {
     const searchBox = document.querySelector('search-box');
     const foodBox = document.querySelector('food-box');
     const foodCard = document.querySelector('food-card');
@@ -38,4 +27,4 @@ const main = () => {
     searchBox.clicked = searchButtonClick;
 };
 
-export default main;
+export default view;

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
-.navbar-brand {
+.navbar-brand,
+.jumbotron h1 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -25,7 +26,7 @@ food-card a {
 
 food-card a:hover,
 food-card a:active {
-    color: #ffc107;
+    color: #fca311;
 }
 
 .modal-body img {

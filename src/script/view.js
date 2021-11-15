@@ -5,7 +5,6 @@ import Source from './source.js';
 const view = () => {
     const searchBox = document.querySelector('search-box');
     const foodBox = document.querySelector('food-box');
-    const foodCard = document.querySelector('food-card');
 
     const searchButtonClick = async () => {
         try {

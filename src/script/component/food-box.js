@@ -17,7 +17,7 @@ class FoodBox extends HTMLElement {
     }
 
     renderError(message) {
-        this.innerHTML = "";
+        this.innerHTML = ``;
         this.innerHTML += `
         <div class="col">
             <div class="card my-3 shadow border-0">

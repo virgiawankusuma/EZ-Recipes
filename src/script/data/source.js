@@ -1,24 +1,16 @@
 class Source {
-    static search(keyword) {
-        return fetch(`www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`)
+    static searchFood(keyword) {
+        return fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`)
             .then(response => {
                 return response.json();
             })
-            .then(responseJson => {
-                if (responseJson.meals) {
-                    return Promise.resolve(responseJson.meals);
+            .then(data => {
+                const foods = data.meals
+                if (foods) {
+                    return Promise.resolve(foods);
                 } else {
-                    return Promise.reject(`${keyword} is not found`);
+                    return Promise.reject(`The ${keyword} is not found`);
                 }
-            })
-    }
-    static categories() {
-        return fetch(`www.themealdb.com/api/json/v1/1/categories.php`)
-            .then(response => {
-                return response.json();
-            })
-            .then(responseJson => {
-                return Promise.resolve(responseJson.categories)
             })
     }
 }

@@ -2,8 +2,10 @@
     background-color: #E5E5E5;
 }
 
-article {
+food-box,
+search-box {
     margin-bottom: 3rem;
+    display: block;
 }
 
 .food-card {

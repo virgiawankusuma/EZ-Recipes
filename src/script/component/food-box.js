@@ -1,4 +1,4 @@
-import './food-item.js';
+import './food-card.js';
 
 class FoodBox extends HTMLElement {
     set foods(foods) {
@@ -9,7 +9,7 @@ class FoodBox extends HTMLElement {
     render() {
         this.innerHTML = ``;
         this._foods.forEach(food => {
-            const foodListElement = document.createElement('food-item');
+            const foodListElement = document.createElement('food-card');
             foodListElement.classList.add('col-lg-6', 'col-12');
             foodListElement.food = food;
             this.appendChild(foodListElement);

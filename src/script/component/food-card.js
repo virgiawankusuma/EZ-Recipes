@@ -1,4 +1,4 @@
-class FoodItem extends HTMLElement {
+class FoodCard extends HTMLElement {
     set food(food) {
         this._food = food
         this.render();
@@ -24,4 +24,4 @@ class FoodItem extends HTMLElement {
     }
 }
 
-customElements.define('food-item', FoodItem);
+customElements.define('food-card', FoodCard);

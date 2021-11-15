@@ -5,45 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EZ Recipes &mdash; Learn easily, cook quickly</title>
+    <title>Food Dictionary &mdash; Good food, good mood</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <h1 class="fs-3">EZ Recipes</h1>
+                    <h1 class="fs-3">Food Dictionary</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit"><i class="bi bi-search"></i></button>
-                    </form>
-                </div>
             </div>
         </nav>
 
         <div class="jumbotron py-5 my-5 rounded-3">
             <div class="container row mx-auto my-3">
                 <section class="col-lg-5 col-md-5 col-12 text-center m-auto">
-                    <h1 class="display-2 fw-bold">EZ Recipes</h1>
+                    <h1 class="display-4 fw-bold">Food Dictionary</h1>
                     <p class="display-5">
-                        Learn <b>Easily</b>,
-                        </br>
-                        Cook <b>Quickly</b>
+                        Other Ways of Knowing Food
                     </p>
-                    <a href="#main" class="btn btn-warning btn-lg" type="button">Cook Now</a>
+                    <a href="#main" class="btn btn-warning btn-lg" type="button">Search Now</a>
                 </section>
                 <section class="col-lg-7 col-md-7 col-12 m-auto dekstop">
                     <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
@@ -54,31 +41,32 @@
     </header>
 
     <main class="container mt-5" id="main">
-        <article id="categories">
-            <h2 class="fs-3 fw-bold">Categories</h2>
-            <section class="row my-3">
-                <div class="categories-card col-lg-3 col-md-4 col-6">
-                    <a href="" class="card shadow border-0 text-center btn btn-warning">
-                        <div class="card-body">
-                            <img src="https://www.themealdb.com/images/category/Miscellaneous.png" class="card-img"
-                                alt="...">
-                            <h4 class="card-title mt-2">Miscellaneous</h4>
-                        </div>
-                    </a>
-                </div>
-            </section>
+        <h2 class="fs-3 fw-bold text-center">Search by Food Name</h2>
+        <article id="search-box">
+            <form class="d-flex my-3 p-5 shadow border-0">
+                <input class="form-control form-control-lg me-2" type="search" placeholder="Type food name.."
+                    aria-label="Search">
+                <button class="btn btn-lg btn-warning" type="submit"><i class="bi bi-search"></i></button>
+            </form>
         </article>
-        <article id="national-dishes">
-            <h2 class="fs-3 fw-bold">National Dishes</h2>
-            <section class="row my-3">
-                <div class="national-dishes-card col-lg-3 col-md-4 col-6">
-                    <a href="" class="card shadow border-0 text-center btn btn-warning">
-                        <div class="card-body">
-                            <img src="https://www.themealdb.com/images/category/Miscellaneous.png" class="card-img"
-                                alt="...">
-                            <h4 class="card-title mt-2">Miscellaneous</h4>
+        <article id="food">
+            <section id="listfood" class="row my-3">
+                <div class="food-card col-lg-6 col-12">
+                    <div class="card mb-3 shadow border-0">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Spicy Arrabiata Penne</h3>
+                                    <h5 class="card-text fw-normal">Italian Food</h5>
+                                    <p class="card-text"><small class="text-muted">Food Category: Vegerarian</small></p>
+                                </div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </section>
         </article>

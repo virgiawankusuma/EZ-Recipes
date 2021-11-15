@@ -1,13 +1,13 @@
 import Source from '../data/source.js';
 
-const navbar = document.querySelector(".navbar");
+const navbar = document.querySelector('.navbar');
 
-window.addEventListener("scroll", (event) => {
+window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
     if (scrollY < 20) {
-        navbar.classList.remove("shadow-sm");
+        navbar.classList.remove('shadow-sm');
     } else {
-        navbar.classList.add("shadow-sm");
+        navbar.classList.add('shadow-sm');
     }
 });
 

@@ -6,13 +6,13 @@ article {
     margin-bottom: 3rem;
 }
 
-.categories-card {
+.food-card {
     margin-bottom: 1rem;
 }
 
-.national-dishes-card {
-    margin-bottom: 1rem;
-}
+/* .food-card div {
+    cursor: default;
+} */
 
 footer {
     text-align: center;
